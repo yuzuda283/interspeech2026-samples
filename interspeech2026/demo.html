@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Samples - Anonymous Submission</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 1400px; margin: 0 auto; padding: 30px 20px; }
+        h1, h2 { color: #2c3e50; text-align: center; }
+        p.subtitle { text-align: center; color: #7f8c8d; font-size: 1.1em; margin-bottom: 30px; }
+        .abstract { background: #f8f9fa; padding: 15px; border-left: 5px solid #3498db; margin-bottom: 40px; font-size: 0.95em; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 50px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); font-size: 0.9em; }
+        th, td { padding: 12px 10px; border: 1px solid #e0e0e0; text-align: center; vertical-align: middle; }
+        th { background-color: #f1f4f8; font-weight: 600; color: #2c3e50; }
+        .note { font-weight: normal; font-size: 0.85em; color: #e74c3c; } /* 红色小字标注，吸引审稿人眼球 */
+        .note-normal { font-weight: normal; font-size: 0.85em; color: #7f8c8d; }
+        tr:nth-child(even) { background-color: #fafbfc; }
+        tr:hover { background-color: #f1f4f8; }
+        audio { width: 160px; height: 35px; outline: none; }
+        .text-prompt { text-align: left; font-style: italic; color: #555; max-width: 250px; word-wrap: break-word; }
+        .footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #999; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+    <h1>Audio Samples for Anonymous Submission</h1>
+    <p class="subtitle">Paper: <strong>Anonymous Submission to Interspeech 2026</strong></p>
+    <div class="abstract">
+        This page contains audio samples demonstrating our proposed Unified Model compared to baselines on Voice Conversion (VC) and Text-to-Speech (TTS) tasks. 
+    </div>
+
+    <!-- 先展示 VC 任务 -->
+    <h2>Task 1: Zero-Shot Voice Conversion (VC)</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Source Audio</th>
+            <th>Target Audio<br>(Reference)</th>
+            <th>CosyVoice 2<br><span class="note-normal">(10 NFE, w/ CFG)</span></th>
+            <th>Our Base Model<br><span class="note-normal">(10 NFE, w/ CFG)</span></th>
+            <th>Our Unified Model<br><span class="note">(3 NFE, w/o CFG)</span></th>
+        </tr>
+        
+        <tr>
+            <td>1</td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/1284_1180_000006_000002-1157_source.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/1284_1180_000006_000002-1157_target.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/cosyvoice2_vc_samples/1284_1180_000006_000002-1157_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_basemodel_baseline_vc_sample/1284_1180_000006_000002-1157_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/1284_1180_000006_000002-1157_synth.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/2300_131720_000026_000007-395_source.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/2300_131720_000026_000007-395_target.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/cosyvoice2_vc_samples/2300_131720_000026_000007-395_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_basemodel_baseline_vc_sample/2300_131720_000026_000007-395_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/2300_131720_000026_000007-395_synth.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/260_123286_000021_000005-100_source.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/260_123286_000021_000005-100_target.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/cosyvoice2_vc_samples/260_123286_000021_000005-100_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_basemodel_baseline_vc_sample/260_123286_000021_000005-100_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/260_123286_000021_000005-100_synth.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/3570_5694_000014_000019-707_source.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/3570_5694_000014_000019-707_target.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/cosyvoice2_vc_samples/3570_5694_000014_000019-707_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_basemodel_baseline_vc_sample/3570_5694_000014_000019-707_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/3570_5694_000014_000019-707_synth.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/3575_170457_000024_000010-254_source.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/3575_170457_000024_000010-254_target.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/cosyvoice2_vc_samples/3575_170457_000024_000010-254_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_basemodel_baseline_vc_sample/3575_170457_000024_000010-254_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="voice_conversion_samples/our_unified_model_vc_sample/3575_170457_000024_000010-254_synth.wav" type="audio/wav"></audio></td>
+        </tr>
+    </table>
+
+    <!-- 再展示 TTS 任务 -->
+    <h2>Task 2: Zero-Shot Text-to-Speech (TTS)</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Text Transcript</th>
+            <th>Prompt Audio<br>(Reference)</th>
+            <th>CosyVoice 2<br><span class="note-normal">(10 NFE, w/ CFG)</span></th>
+            <th>Our Base Model<br><span class="note-normal">(10 NFE, w/ CFG)</span></th>
+            <th>Our Unified Model<br><span class="note">(3 NFE, w/o CFG)</span></th>
+        </tr>
+        
+        <tr>
+            <td>1</td>
+            <td class="text-prompt">"Also, a popular contrivance whereby love making may be suspended but not stopped during the picnic season."</td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_unified_model_tts_samples/121_121726_000004_000003-1815_prompt.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/cosyvoice2_tts_samples/121_121726_000004_000003-1815_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_basemodel_baseline_tts_samples/121_121726_000004_000003-1815_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_unified_model_tts_samples/121_121726_000004_000003-1815_synth.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="text-prompt">""The first page on the floor, the second in the window, the third where you left it," said he."</td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_unified_model_tts_samples/1580_141083_000012_000000-2184_prompt.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/cosyvoice2_tts_samples/1580_141083_000012_000000-2184_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_basemodel_baseline_tts_samples/1580_141083_000012_000000-2184_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_unified_model_tts_samples/1580_141083_000012_000000-2184_synth.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="text-prompt">"The only place, except in front of the grand piano, where Polly approached a state of comparative happiness, was in the greenhouse."</td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_unified_model_tts_samples/237_126133_000003_000000-3313_prompt.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/cosyvoice2_tts_samples/237_126133_000003_000000-3313_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_basemodel_baseline_tts_samples/237_126133_000003_000000-3313_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_unified_model_tts_samples/237_126133_000003_000000-3313_synth.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="text-prompt">"No: the first of those monsters has a porpoise's snout, a lizard's head, a crocodile's teeth; and hence our mistake."</td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_unified_model_tts_samples/260_123286_000054_000000-97_prompt.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/cosyvoice2_tts_samples/260_123286_000054_000000-97_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_basemodel_baseline_tts_samples/260_123286_000054_000000-97_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_unified_model_tts_samples/260_123286_000054_000000-97_synth.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td class="text-prompt">"O life of this our spring! why fades the lotus of the water? Why fade these children of the spring?"</td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_unified_model_tts_samples/908_157963_000010_000000-3890_prompt.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/cosyvoice2_tts_samples/908_157963_000010_000000-3890_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_basemodel_baseline_tts_samples/908_157963_000010_000000-3890_synth.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="text_to_speech_samples/our_unified_model_tts_samples/908_157963_000010_000000-3890_synth.wav" type="audio/wav"></audio></td>
+        </tr>
+    </table>
+
+    <div class="footer">Submitted for double-blind review.</div>
+</body>
+</html>
